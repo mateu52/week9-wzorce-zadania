@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Content from './component/Content';
-
+import NavItem from './component/NavItem';
 
 function App() {
   const [ promalert, setProm ] =useState();
@@ -12,7 +12,7 @@ function App() {
     const passphrase = prompt('haslo?');
     setProm(passphrase);
   },[]);  
-
+  
   const klucz = ( promalert === passlog) ? true : false;
 
   const Passphrase = () => {

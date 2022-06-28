@@ -8,6 +8,7 @@ const Passphrase = () => {
     return (
         <MyContext.Consumer>
             {value => value === false && (
+                
                 <Content />
             )}
         </MyContext.Consumer>

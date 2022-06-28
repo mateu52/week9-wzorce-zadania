@@ -1,11 +1,12 @@
 import React from 'react';
 import withUser from './withUser';
-
+import NavItem from './NavItem';
 function Movies(props){
 
     return (
         <div>
-            <h1>mowies: {props.email}</h1>
+            <NavItem />
+            <h3>movies: {props.email}</h3>
         </div>
     )
 }
